@@ -1,0 +1,16 @@
+v 4
+file / "C:/Users/mauro/Desktop/Electronica_II/Proyectos_con_VHDL/proyecto_base/src/prueba_io.vhd" "9a28fd38ae8580b2d0621182b5fc169c031d5d3b" "20261026185004.139":
+  entity prueba_io at 1( 0) + 0 on 4;
+  architecture arch of prueba_io at 11( 199) + 0 on 4;
+file / "C:/Users/mauro/Desktop/Electronica_II/Proyectos_con_VHDL/proyecto_base/src/Ejercicio_3.vhd" "f6ea29d3f959e1c9eb15300a2ac290e049d93df7" "20261026185015.203":
+  entity contador_top at 1( 0) + 0 on 13;
+  architecture estructural of contador_top at 15( 341) + 0 on 14;
+file / "C:/Users/mauro/Desktop/Electronica_II/Proyectos_con_VHDL/proyecto_base/src/ejemplo_tb.vhd" "db0d4390e5a078260a061ebd85c129a83fa1c2cb" "20261026185004.135":
+  entity ejemplo_tb at 1( 0) + 0 on 4;
+  architecture tb of ejemplo_tb at 9( 124) + 0 on 4;
+file / "C:/Users/mauro/Desktop/Electronica_II/Proyectos_con_VHDL/proyecto_base/src/ejemplo.vhd" "4bd0fa37825d416de68888519c88ba899cd041e3" "20261026185004.132":
+  entity ejemplo at 1( 0) + 0 on 4;
+  architecture arch of ejemplo at 12( 182) + 0 on 4;
+file / "C:/Users/mauro/Desktop/Electronica_II/Proyectos_con_VHDL/proyecto_base/src/contador_tb.vhd" "9de31db8762302877a26842645442f77586728ca" "20261026185014.396":
+  entity contador_tb at 1( 0) + 0 on 11;
+  architecture sim of contador_tb at 9( 195) + 0 on 12;
