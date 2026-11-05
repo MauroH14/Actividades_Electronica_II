@@ -1,7 +1,7 @@
 -- 1. SUMADOR
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
-use IEEE.NUMERIC_STD.all; -- Librería oficial estándar reemplazada aquí
+use IEEE.NUMERIC_STD.all;
 
 entity sumador4b is
     port (a, b : in STD_LOGIC_VECTOR (3 downto 0); y : out STD_LOGIC_VECTOR (3 downto 0));
@@ -9,7 +9,6 @@ end sumador4b;
 
 architecture estructural of sumador4b is
 begin
-    -- Se convierte a unsigned para sumar matemáticamente, y se vuelve a convertir a vector
     y <= std_logic_vector(unsigned(a) + unsigned(b));
 end estructural;
 

@@ -18,12 +18,11 @@ architecture sim of contador_tb is
         );
     end component;
 
-    -- Señales internas actualizadas
     signal clk, reset, load, ending : STD_LOGIC := '0';
     signal D, Q : STD_LOGIC_VECTOR(3 downto 0) := "0000";
 
 begin
-    -- Mapeo de puertos con los nombres
+    -- Mapeo de puertos
     dut: contador_top port map (
         clk => clk,
         reset => reset,
@@ -33,7 +32,7 @@ begin
         Q => Q
     );
 
-    -- Generador de reloj
+    -- Generador de reloj continuo (sin bucles while)
     process begin
         clk <= '1';
         wait for 5 ns;
@@ -59,9 +58,11 @@ begin
         ending <= '1';
 
         -- Dejarlo contar hasta "15" y que vuelva a "1"
-        wait for 180 ns; 
+        wait for 180 ns;
 
-        wait; -- Detener la simulación
+        -- DETENER LA SIMULACIÓN CON UN MENSAJE DE ÉXITO
+        assert false report "Simulacion completada exitosamente." severity failure;
+
     end process;
 
 end sim;
