@@ -60,7 +60,6 @@ begin
         -- Dejarlo contar hasta "15" y que vuelva a "1"
         wait for 180 ns;
 
-        -- DETENER LA SIMULACIÓN CON UN MENSAJE DE ÉXITO
         assert false report "Simulacion completada exitosamente." severity failure;
 
     end process;
