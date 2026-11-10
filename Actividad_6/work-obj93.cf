@@ -1,0 +1,15 @@
+v 4
+file . "semaforo2_tb.vhd" "d26d3d938e1de0bdce2c86ac99facc37163408ad" "20261110001617.824":
+  entity semaforo_factorizado_tb at 1( 0) + 0 on 33;
+  architecture sim of semaforo_factorizado_tb at 8( 134) + 0 on 34;
+file . "semaforo_tb.vhd" "90b02964c07b376938ba215dc9edfb7435250063" "20261109232210.008":
+  entity semaforo_unica_tb at 1( 0) + 0 on 25;
+  architecture sim of semaforo_unica_tb at 8( 140) + 0 on 26;
+file . "semaforo.vhd" "ad5ae250901a4ebd95160215cf2d4700f3b35888" "20261109232154.637":
+  entity semaforo_unica at 1( 0) + 0 on 23;
+  architecture fsm_arch of semaforo_unica at 23( 1011) + 0 on 24;
+file . "semaforo2.vhd" "29329ce1e4085db3d5db2680ac9bc767c6fc327b" "20261110001739.521":
+  entity memoria_peaton at 1( 0) + 0 on 35;
+  architecture arch of memoria_peaton at 15( 312) + 0 on 36;
+  entity semaforo_factorizado at 34( 764) + 0 on 37;
+  architecture estructural of semaforo_factorizado at 51( 1278) + 0 on 38;
